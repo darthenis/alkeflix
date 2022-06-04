@@ -1,0 +1,82 @@
+.animationCard{
+ width: 250px;
+ visibility: hidden;
+ font-size: 12px;
+ text-align: left;
+ left: 10px;
+ bottom: 20px;
+ z-index: 111;
+ background-color: rgba(43, 43, 43, 0.9);
+
+
+}
+
+.coverImg{
+    height: 280px;
+    width: 190px;
+    top:0;
+    position: absolute;
+    z-index: 11;
+    background-color: rgba(43, 43, 43, 0.5);
+    visibility: hidden;
+}
+
+.font-12{
+    font-size: 12px;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+.animation{
+
+    cursor: hand;
+    cursor: pointer;
+}
+
+
+.animation:hover > .animationCard{
+
+    visibility: visible;
+
+}
+
+.animation:hover > .cardImg > .coverImg{
+    visibility: visible;
+}
+
+.img{
+    height: 280px;
+    width: 190px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.cursor{
+    cursor: hand;
+    cursor: pointer;
+}
+
+.cursor:hover{
+
+    color:rgb(175, 175, 175)
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .img{
+        height: 200px;
+        width: 100%;
+        border: 3px solid rgb(255, 255, 255);
+    }
+
+    .coverImg{
+        height: 200px;
+        width: 100%;
+  
+    }
+
+}
